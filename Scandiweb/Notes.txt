@@ -1,0 +1,29 @@
+- Avoid using conditional statements for handling differences in product types
+- This means you should avoid any if-else and switch-case statements which are used to handle any difference between products.
+
+Product
+========
+- SKU (id: #sku)
+- Name (id: #name)
+- Price (id: #price)
+
+Product Type
+============
+- Product type switcher (id: #productType) with following options:
+    - DVD (can be value or text)
+    - Book (can be value or text)
+    - Furniture (can be value or text)
+
+Product Type Unit
+=================
+- Product type-specific attribute
+    - Size input field (in MB) for DVD-disc should have an ID: #size
+    - Weight input field (in Kg) for Book should have an ID: #weight
+    - Each from Dimensions input fields (HxWxL) for Furniture should have an appropriate ID:
+        - Height - #height
+        - Width - #width
+        - Length - #length
+
+        Size
+        Weight
+        Dimensions
