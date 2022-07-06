@@ -6,43 +6,43 @@ Memory Usage: 42.1 MB, less than 47.87% of C# online submissions for Candy.
 public class Solution
 {
     public static void CheckNeighborsFromIndex(int fromIndex, int[] ratings, ref int[] candiesPerChild)
-	{
-		for (var i = fromIndex; i >= 0; i--)
-		{
-			// Check After
-			if (i == candiesPerChild.Length - 1)
-			{
-				if (ratings[i] > ratings[i - 1] && candiesPerChild[i] <= candiesPerChild[i - 1])
-				{
-					candiesPerChild[i] = candiesPerChild[i - 1] + 1;
-				}
-			}
-			else
-			{
-				if (ratings[i] < ratings[i + 1] && candiesPerChild[i] >= candiesPerChild[i + 1])
-				{
-					candiesPerChild[i + 1] = candiesPerChild[i] - 1;
-				}
-			}
-			
-			// Check Before
-			if (i == 0)
-			{
-				if (ratings[i] > ratings[i + 1] && candiesPerChild[i] <= candiesPerChild[i + 1])
-				{
-					candiesPerChild[i] = candiesPerChild[i + 1] + 1;
-				}
-			}
-			else
-			{
-				if (ratings[i] < ratings[i - 1] && candiesPerChild[i] >= candiesPerChild[i - 1])
-				{
-					candiesPerChild[i - 1] = candiesPerChild[i] + 1;
-				}
-			}
-		}
-	}
-	
+    {
+        for (var i = fromIndex; i >= 0; i--)
+        {
+            // Check After
+            if (i == candiesPerChild.Length - 1)
+            {
+                if (ratings[i] > ratings[i - 1] && candiesPerChild[i] <= candiesPerChild[i - 1])
+                {
+                    candiesPerChild[i] = candiesPerChild[i - 1] + 1;
+                }
+            }
+            else
+            {
+                if (ratings[i] < ratings[i + 1] && candiesPerChild[i] >= candiesPerChild[i + 1])
+                {
+                    candiesPerChild[i + 1] = candiesPerChild[i] - 1;
+                }
+            }
+            
+            // Check Before
+            if (i == 0)
+            {
+                if (ratings[i] > ratings[i + 1] && candiesPerChild[i] <= candiesPerChild[i + 1])
+                {
+                    candiesPerChild[i] = candiesPerChild[i + 1] + 1;
+                }
+            }
+            else
+            {
+                if (ratings[i] < ratings[i - 1] && candiesPerChild[i] >= candiesPerChild[i - 1])
+                {
+                    candiesPerChild[i - 1] = candiesPerChild[i] + 1;
+                }
+            }
+        }
+    }
+    
     public int Candy(int[] ratings)
     {
         if (ratings.Length == 1)
@@ -63,14 +63,14 @@ public class Solution
             {
                 candiesPerChild[i] = 1;
             }
-			else if (ratings[i] == ratings[i - 1])
+            else if (ratings[i] == ratings[i - 1])
             {
                 candiesPerChild[i] = 1;
             }
-			else if (ratings[i - 1] > ratings[i])
+            else if (ratings[i - 1] > ratings[i])
             {
-				candiesPerChild[i] = 1;
-				CheckNeighborsFromIndex(i, ratings, ref candiesPerChild);
+                candiesPerChild[i] = 1;
+                CheckNeighborsFromIndex(i, ratings, ref candiesPerChild);
             }
             else // if (ratings[i - 1] < ratings[i])
             {
