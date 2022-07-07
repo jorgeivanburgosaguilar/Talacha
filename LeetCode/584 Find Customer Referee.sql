@@ -2,6 +2,9 @@
 584 Find Customer Referee
 Runtime: 466 ms, faster than 72.96% of MySQL online submissions for Find Customer Referee.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Find Customer Referee.
+--
+Runtime: 927 ms, faster than 72.33% of MS SQL Server online submissions for Find Customer Referee.
+Memory Usage: 0B, less than 100.00% of MS SQL Server online submissions for Find Customer Referee.
 */
 SELECT  name
 FROM    Customer

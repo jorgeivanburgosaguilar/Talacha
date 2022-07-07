@@ -10,7 +10,6 @@ WHERE       E.name IS NULL
 OR          S.salary IS NULL
 ORDER BY    1 ASC
 
-
 /*
 Runtime: 1559 ms, faster than 5.01% of MySQL online submissions for Employees With Missing Information.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Employees With Missing Information.
