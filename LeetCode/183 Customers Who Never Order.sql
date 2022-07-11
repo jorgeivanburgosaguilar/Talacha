@@ -1,6 +1,6 @@
 /*
 183 Customers Who Never Order
-Runtime: 1411 ms, faster than 5.01% of MySQL online submissions for Customers Who Never Order.
+Runtime: 417 ms, faster than 88.39% of MySQL online submissions for Customers Who Never Order.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Customers Who Never Order.
 */
 SELECT      name AS Customers
