@@ -1,6 +1,6 @@
 /*
 1667 Fix Names in a Table
-Runtime: 1094 ms, faster than 15.25% of MySQL online submissions for Fix Names in a Table.
+Runtime: 564 ms, faster than 86.53% of MySQL online submissions for Fix Names in a Table.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Fix Names in a Table.
 */
 SELECT       user_id

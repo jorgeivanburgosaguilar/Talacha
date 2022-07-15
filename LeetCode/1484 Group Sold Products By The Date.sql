@@ -15,7 +15,6 @@ FROM        (
 GROUP BY    T.sell_date
 ORDER BY    T.sell_date ASC
 
-
 /*
 Runtime: 1831 ms, faster than 37.27% of MS SQL Server online submissions for Group Sold Products By The Date.
 Memory Usage: 0B, less than 100.00% of MS SQL Server online submissions for Group Sold Products By The Date.

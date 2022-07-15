@@ -11,7 +11,7 @@ ORDER BY	1 DESC
 LIMIT		1,1
 
 /*
-Runtime: 3342 ms, faster than 1.03% of MS SQL Server online submissions for Second Highest Salary.
+Runtime: 683 ms, faster than 66.91% of MS SQL Server online submissions for Second Highest Salary.
 Memory Usage: 0B, less than 100.00% of MS SQL Server online submissions for Second Highest Salary.
 */
 SELECT TOP 1    T.salary AS SecondHighestSalary

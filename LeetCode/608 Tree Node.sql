@@ -3,7 +3,7 @@
 Runtime: 396 ms, faster than 81.79% of MySQL online submissions for Tree Node.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Tree Node.
 --
-Runtime: 1303 ms, faster than 9.09% of MS SQL Server online submissions for Tree Node.
+Runtime: 692 ms, faster than 48.75% of MS SQL Server online submissions for Tree Node.
 Memory Usage: 0B, less than 100.00% of MS SQL Server online submissions for Tree Node.
 */
 SELECT	 	 id
