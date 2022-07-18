@@ -1,6 +1,6 @@
 /*
 586 Customer Placing the Largest Number of Orders
-Runtime: 1850 ms, faster than 5.02% of MySQL online submissions for Customer Placing the Largest Number of Orders.
+Runtime: 870 ms, faster than 18.42% of MySQL online submissions for Customer Placing the Largest Number of Orders.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Customer Placing the Largest Number of Orders.
 */
 SELECT      T.customer_number

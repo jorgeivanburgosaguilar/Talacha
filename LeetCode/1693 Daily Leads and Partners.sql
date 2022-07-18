@@ -1,6 +1,6 @@
 /*
 1693 Daily Leads and Partners
-Runtime: 2773 ms, faster than 5.01% of MySQL online submissions for Daily Leads and Partners.
+Runtime: 556 ms, faster than 61.98% of MySQL online submissions for Daily Leads and Partners.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Daily Leads and Partners.
 --
 Runtime: 766 ms, faster than 74.97% of MS SQL Server online submissions for Daily Leads and Partners.

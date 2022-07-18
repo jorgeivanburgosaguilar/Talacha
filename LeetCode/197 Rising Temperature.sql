@@ -9,7 +9,7 @@ LEFT JOIN   Weather AS YESTERDAY ON YESTERDAY.recordDate = DATE_SUB(TODAY.record
 WHERE       TODAY.temperature > YESTERDAY.temperature
 
 /*
-Runtime: 2135 ms, faster than 5.03% of MS SQL Server online submissions for Rising Temperature.
+Runtime: 896 ms, faster than 52.82% of MS SQL Server online submissions for Rising Temperature.
 Memory Usage: 0B, less than 100.00% of MS SQL Server online submissions for Rising Temperature.
 */
 SELECT      TODAY.id
