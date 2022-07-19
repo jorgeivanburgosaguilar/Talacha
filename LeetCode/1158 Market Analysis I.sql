@@ -1,6 +1,6 @@
 /*
 1158 Market Analysis I
-Runtime: 2323 ms, faster than 9.18% of MySQL online submissions for Market Analysis I.
+Runtime: 1350 ms, faster than 46.62% of MySQL online submissions for Market Analysis I.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Market Analysis I.
 */
 SELECT       T.buyer_id
