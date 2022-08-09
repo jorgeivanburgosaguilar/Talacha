@@ -1,5 +1,5 @@
 import React from "react"
 
-export const Greet = () => <h1>Hello World 2022</h1>
+export const Greet = () => <h1>Hello World {new Date().getFullYear()}</h1>
 
-//export default Greet
+export default Greet;
