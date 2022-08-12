@@ -19,16 +19,13 @@ export class LoginControl extends Component {
 
     render() {
         const isLoggedIn = this.state.isLoggedIn;
-        let button;
-
-        if (isLoggedIn)
-            button = <ClickButton text="Cerrar Sesion" onClick={this.handleLogoutClick} />;
-        else
-            button = <ClickButton text="Iniciar Sesion" onClick={this.handleLoginClick} />;
+        const clickButtonText = isLoggedIn ? 'Cerrar Sesion' : 'Iniciar Sesion';
+        const clickButtonOnClick = isLoggedIn ? this.handleLogoutClick : this.handleLoginClick;
 
         return (
             <div>
-                {button}
+                { isLoggedIn ? <h1>Hola de nuevo</h1> : <h1>Bienvenido</h1> }
+                <ClickButton text={clickButtonText} onClick={clickButtonOnClick} />
             </div>
         )
     }
