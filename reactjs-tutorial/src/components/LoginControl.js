@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { ClickButton } from './ClickButton'
+import React, { Component } from "react";
+import { ClickButton } from "./ClickButton";
 
 export class LoginControl extends Component {
     constructor(props) {
@@ -19,16 +19,21 @@ export class LoginControl extends Component {
 
     render() {
         const isLoggedIn = this.state.isLoggedIn;
-        const clickButtonText = isLoggedIn ? 'Cerrar Sesion' : 'Iniciar Sesion';
-        const clickButtonOnClick = isLoggedIn ? this.handleLogoutClick : this.handleLoginClick;
+        const clickButtonText = isLoggedIn ? "Cerrar Sesion" : "Iniciar Sesion";
+        const clickButtonOnClick = isLoggedIn
+            ? this.handleLogoutClick
+            : this.handleLoginClick;
 
         return (
             <div>
-                { isLoggedIn ? <h1>Hola de nuevo</h1> : <h1>Bienvenido</h1> }
-                <ClickButton text={clickButtonText} onClick={clickButtonOnClick} />
+                {isLoggedIn ? <h1>Hola de nuevo</h1> : <h1>Bienvenido</h1>}
+                <ClickButton
+                    text={clickButtonText}
+                    onClick={clickButtonOnClick}
+                />
             </div>
-        )
+        );
     }
 }
 
-export default LoginControl
+export default LoginControl;

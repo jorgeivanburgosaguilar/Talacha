@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 function FormattedDate(props) {
     return <h2>It is {props.date.toLocaleTimeString()}.</h2>;
@@ -14,14 +14,11 @@ export class Clock extends Component {
         super(props);
         let clockDate = new Date();
         AddHours(clockDate, this.props.timezone);
-        this.state = {date: clockDate};
+        this.state = { date: clockDate };
     }
 
     componentDidMount() {
-        this.timerID = setInterval(
-        () => this.tick(),
-        1000
-        );
+        this.timerID = setInterval(() => this.tick(), 1000);
     }
 
     componentWillUnmount() {
@@ -32,16 +29,16 @@ export class Clock extends Component {
         let clockDate = new Date();
         AddHours(clockDate, this.props.timezone);
         this.setState({
-            date: clockDate
+            date: clockDate,
         });
     }
 
     render() {
         return (
-        <div>
-            <h1>Clock +{this.props.timezone}</h1>
-            <FormattedDate date={this.state.date} />
-        </div>
+            <div>
+                <h1>Clock +{this.props.timezone}</h1>
+                <FormattedDate date={this.state.date} />
+            </div>
         );
     }
 }

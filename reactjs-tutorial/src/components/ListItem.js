@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function ListItem(props) {
     return (
-        <li>{props.value} {props.key2}</li>
+        <li>
+            {props.value} {props.key2}
+        </li>
     );
 }
 
