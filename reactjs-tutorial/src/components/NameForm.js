@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class NameForm extends Component {
+class NameForm extends Component {
     constructor(props) {
         super(props);
         this.state = { name: "", textArea: "" };

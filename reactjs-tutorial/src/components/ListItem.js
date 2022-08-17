@@ -3,7 +3,7 @@ import React from "react";
 function ListItem(props) {
     return (
         <li>
-            {props.value} {props.key2}
+            {props.value} <code>(Key: {props.key2})</code>
         </li>
     );
 }

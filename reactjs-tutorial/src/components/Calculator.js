@@ -20,7 +20,7 @@ function tryConvert(temperature, convert) {
     return rounded.toString();
 }
 
-export class Calculator extends Component {
+class Calculator extends Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);

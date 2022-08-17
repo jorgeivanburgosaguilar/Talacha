@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ListItem from "./ListItem";
 
-export class MyList extends Component {
+class MyList extends Component {
     render() {
         return (
             <ul>

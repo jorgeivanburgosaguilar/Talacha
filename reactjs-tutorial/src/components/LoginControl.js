@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { ClickButton } from "./ClickButton";
+import ClickButton from "./ClickButton";
 
-export class LoginControl extends Component {
+class LoginControl extends Component {
     constructor(props) {
         super(props);
         this.handleLoginClick = this.handleLoginClick.bind(this);

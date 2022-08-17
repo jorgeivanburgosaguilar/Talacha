@@ -1,5 +1,15 @@
 import React from "react";
 
-export const Greet = () => <h1>Hello World {new Date().getFullYear()}</h1>;
+const Greet = (props) => (
+    <React.Fragment>
+        <h1>
+            Hello World {new Date().getFullYear()}
+        </h1>
+
+        <div>
+            {props.children}
+        </div>
+    </React.Fragment>
+);
 
 export default Greet;

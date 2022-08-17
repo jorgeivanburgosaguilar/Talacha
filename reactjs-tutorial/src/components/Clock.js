@@ -9,7 +9,7 @@ function AddHours(clockDate, timezoneDiff = 0) {
     clockDate.setHours(clockDate.getHours() + timezoneDiff);
 }
 
-export class Clock extends Component {
+class Clock extends Component {
     constructor(props) {
         super(props);
         let clockDate = new Date();

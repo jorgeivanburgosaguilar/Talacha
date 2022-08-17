@@ -5,7 +5,7 @@ const scaleNames = {
     f: "Fahrenheit",
 };
 
-export class TemperatureInput extends Component {
+class TemperatureInput extends Component {
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);

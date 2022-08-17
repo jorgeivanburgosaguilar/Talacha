@@ -1,8 +1,7 @@
-//import logo from './logo.svg';
 import "./App.css";
-import { Greet } from "./components/Greet";
-import { Clock } from "./components/Clock";
-import { LoginControl } from "./components/LoginControl";
+import Greet from "./components/Greet";
+import Clock from "./components/Clock";
+import LoginControl from "./components/LoginControl";
 import MyList from "./components/MyList";
 import NameForm from "./components/NameForm";
 import Calculator from "./components/Calculator";
@@ -13,12 +12,13 @@ function App() {
         <div className="App">
             <Calculator />
             <LoginControl />
-            <Greet />
-            <NameForm />
-            <Clock timezone={1} />
-            <Clock timezone={2} />
-            <Clock timezone={3} />
-            <MyList elements={numbers} />
+            <Greet>
+                <NameForm />
+                <MyList elements={numbers} />
+                <Clock timezone={1} />
+                <Clock timezone={2} />
+                <Clock timezone={3} />
+            </Greet>
         </div>
     );
 }
