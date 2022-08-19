@@ -1,5 +1,6 @@
 const { faker } = require("@faker-js/faker");
 
+// Preferi usar faker en lugar de crear un objeto manualmente
 function generarPeliculas() {
     let peliculas = [];
     for (let i = 0; i < 10; i++) {

@@ -3,6 +3,7 @@ const { peliculasMock } = require("../utils/mocks/peliculas.js");
 
 function peliculasAPI(app) {
     const router = express.Router();
+    // En la version original del video usan app.user que esta incorrecto es app.use
     app.use("/api/peliculas", router);
 
     router.get("/", async function (req, res, next) {
