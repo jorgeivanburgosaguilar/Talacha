@@ -1,5 +1,5 @@
 /*
-128. Longest Consecutive Sequence
+128 Longest Consecutive Sequence
 Runtime: 197 ms, faster than 79.49% of C# online submissions for Longest Consecutive Sequence.
 Memory Usage: 43.9 MB, less than 97.69% of C# online submissions for Longest Consecutive Sequence.
 */
