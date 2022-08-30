@@ -1,12 +1,13 @@
 /*
-15 3Sum
-Runtime: 204 ms, faster than 89.97% of C# online submissions for 3Sum.
-Memory Usage: 48 MB, less than 65.76% of C# online submissions for 3Sum.
+15 3Sum (Lowest Memory)
+Runtime: 341 ms, faster than 35.43% of C# online submissions for 3Sum.
+Memory Usage: 42.9 MB, less than 100.00% of C# online submissions for 3Sum.
 */
 public class Solution
 {    
     public IList<IList<int>> ThreeSum(int[] nums)
     {
+        System.Runtime.GCSettings.LatencyMode = System.Runtime.GCLatencyMode.LowLatency;
         Array.Sort(nums);
         var numsLength = nums.Length;
         var result = new List<IList<int>>();
@@ -18,12 +19,14 @@ public class Solution
                 continue;
             }
             
+            var numI = nums[i];
             var j = i + 1;
             var k = numsLength - 1;
             
             while (j < k)
             {
-                var threeSum = nums[i] + nums[j] + nums[k];
+                var numK = nums[k];
+                var threeSum = numI + nums[j] + numK;
                 if (threeSum > 0)
                 {
                     k--;
@@ -34,7 +37,7 @@ public class Solution
                 }
                 else
                 {
-                    result.Add(new List<int> { nums[i], nums[j], nums[k] });
+                    result.Add(new List<int> { numI, nums[j], numK });
                     j++;
                     
                     while (nums[j] == nums[j - 1] && j < k)
