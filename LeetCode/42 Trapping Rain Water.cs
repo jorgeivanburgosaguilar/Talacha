@@ -19,11 +19,11 @@ public class Solution
                 maxLeft[i] = 0;
                 continue;
             }
-            
+
             currentMaxHeight = Math.Max(height[i - 1], currentMaxHeight);
             maxLeft[i] = currentMaxHeight;
         }
-        
+
         currentMaxHeight = 0;
         for (var i = heightLength; i >= 0; i--)
         {
@@ -32,18 +32,18 @@ public class Solution
                 maxRight[i] = 0;
                 continue;
             }
-            
+
             currentMaxHeight = Math.Max(height[i + 1], currentMaxHeight);
             maxRight[i] = currentMaxHeight;
         }
-        
+
         var maxWater = 0;
         for (var i = 0; i <= heightLength; i++)
         {
             var currentMaxWater = Math.Min(maxLeft[i], maxRight[i]) - height[i];
             maxWater += currentMaxWater > 0 ? currentMaxWater : 0;
         }
-        
+
         return maxWater;
     }
 }

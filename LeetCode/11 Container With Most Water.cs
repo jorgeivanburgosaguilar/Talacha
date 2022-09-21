@@ -9,13 +9,13 @@ public class Solution
     {
         var indexAdd = 0;
         var indexSubstract = height.Length - 1;
-        
+
         var maxArea = 0;
         while (indexAdd < indexSubstract)
         {
             var heightIndexAdd = height[indexAdd];
             var heightIndexSubstract = height[indexSubstract];
-            
+
             maxArea = Math.Max((indexSubstract - indexAdd) * Math.Min(heightIndexAdd, heightIndexSubstract), maxArea);
             if (heightIndexAdd > heightIndexSubstract)
             {
@@ -26,7 +26,7 @@ public class Solution
                 indexAdd++;
             }
         }
-        
+
         return maxArea;
     }
 }
