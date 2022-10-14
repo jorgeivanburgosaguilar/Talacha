@@ -14,7 +14,7 @@ CREATE TABLE [dbo].[TipoGenero](
 ) ON [PRIMARY]
 GO
 SET IDENTITY_INSERT [dbo].[TipoGenero] ON 
-INSERT [dbo].[TipoGenero] ([IdTipoGenero], [Nombre]) VALUES (1, N'Acción')
+INSERT [dbo].[TipoGenero] ([IdTipoGenero], [Nombre]) VALUES (1, N'AcciÃ³n')
 INSERT [dbo].[TipoGenero] ([IdTipoGenero], [Nombre]) VALUES (2, N'Deportes')
 INSERT [dbo].[TipoGenero] ([IdTipoGenero], [Nombre]) VALUES (3, N'Estrategia')
 SET IDENTITY_INSERT [dbo].[TipoGenero] OFF
