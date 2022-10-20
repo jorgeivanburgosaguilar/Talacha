@@ -9,12 +9,7 @@ namespace ExamenVDG.Models
         public string Nombre { get; set; }
 
         [JsonIgnore]
-        public virtual ICollection<Videojuego> Videojuegos { get; set; }
-
-        public Genero()
-        {
-            Videojuegos = new HashSet<Videojuego>();
-        }
+        public ICollection<Videojuego> Videojuegos { get; set; }
 
         public override string ToString()
         {
