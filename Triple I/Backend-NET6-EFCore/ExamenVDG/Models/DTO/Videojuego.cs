@@ -1,4 +1,6 @@
-﻿namespace ExamenVDG.Models
+﻿using System.Text.Json.Serialization;
+
+namespace ExamenVDG.Models.DTO
 {
     public class Videojuego
     {
@@ -8,24 +10,17 @@
         public short Anio { get; set; }
         public byte Calificacion { get; set; }
         public int Cantidad { get; set; }
-
         public int IdTipoConsola { get; set; }
-        public Consola? Consola { get; set; }
-
         public int IdTipoGenero { get; set; }
-        public Genero? Genero { get; set; }
 
+        [JsonConstructor]
         public Videojuego()
         {
-            IdVideojuego = 0;
-            Titulo = string.Empty;
-            Descripcion = string.Empty;
-            Anio = Convert.ToInt16(DateTime.Today.Year);
-            Calificacion = 1;
-            Cantidad = 1;
+            Titulo =
+                Descripcion = string.Empty;
         }
 
-        public Videojuego(DTO.Videojuego videojuego)
+        public Videojuego(Models.Videojuego videojuego)
         {
             IdVideojuego = videojuego.IdVideojuego;
             Titulo = videojuego.Titulo;
@@ -35,11 +30,6 @@
             Cantidad = videojuego.Cantidad;
             IdTipoConsola = videojuego.IdTipoConsola;
             IdTipoGenero = videojuego.IdTipoGenero;
-        }
-
-        public override string ToString()
-        {
-            return Titulo;
         }
     }
 }
