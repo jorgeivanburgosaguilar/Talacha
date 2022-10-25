@@ -7,7 +7,7 @@ namespace ExamenVDG.Models
         [Key]
         public int IdVideojuego { get; set; }
 
-        [Required, StringLength(256)]
+        [Required, StringLength(256, MinimumLength = 1)]
         public string Titulo { get; set; }
 
         [Required]

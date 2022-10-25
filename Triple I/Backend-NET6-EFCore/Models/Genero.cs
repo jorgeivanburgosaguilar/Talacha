@@ -7,7 +7,7 @@ namespace ExamenVDG.Models
         [Key]
         public int IdTipoGenero { get; set; }
 
-        [Required, StringLength(256)]
+        [Required, StringLength(256, MinimumLength = 1)]
         public string Nombre { get; set; } = string.Empty;
 
         public ICollection<Videojuego> Videojuegos { get; set; } = new List<Videojuego>();

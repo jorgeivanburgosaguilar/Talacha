@@ -13,9 +13,9 @@ namespace ExamenVDG.Models
         {
         }
 
-        public virtual DbSet<Consola> Consolas { get; set; } = null;
-        public virtual DbSet<Genero> Generos { get; set; } = null;
-        public virtual DbSet<Videojuego> Videojuegos { get; set; } = null;
+        public virtual DbSet<Consola> Consolas => Set<Consola>();
+        public virtual DbSet<Genero> Generos => Set<Genero>();
+        public virtual DbSet<Videojuego> Videojuegos => Set<Videojuego>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
