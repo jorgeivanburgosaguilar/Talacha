@@ -1,18 +1,15 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ExamenVDG.Models
 {
     public class Consola
     {
+        [Key]
         public int IdTipoConsola { get; set; }
-        public string Nombre { get; set; }
 
-        [JsonIgnore]
-        public ICollection<Videojuego> Videojuegos { get; set; }
+        [Required, StringLength(256)]
+        public string Nombre { get; set; } = string.Empty;
 
-        public override string ToString()
-        {
-            return Nombre;
-        }
+        public ICollection<Videojuego> Videojuegos { get; set; } = new List<Videojuego>();
     }
 }
