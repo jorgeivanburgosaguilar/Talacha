@@ -34,10 +34,14 @@ namespace ExamenVDG.Models
 
         public Videojuego()
         {
+            IdVideojuego = 0;
             Titulo =
                 Descripcion = string.Empty;
             Anio = Convert.ToInt16(DateTime.Today.Year);
             Calificacion = 1;
+            Cantidad = 0;
+            IdTipoConsola = 0;
+            IdTipoGenero = 0;
             Consola = new Consola();
             Genero = new Genero();
         }
@@ -51,9 +55,9 @@ namespace ExamenVDG.Models
             Calificacion = videojuego.Calificacion;
             Cantidad = videojuego.Cantidad;
             IdTipoConsola = videojuego.IdTipoConsola;
-            Consola = new Consola();
             IdTipoGenero = videojuego.IdTipoGenero;
-            Genero = new Genero();
+            Consola = new Consola(videojuego.IdTipoConsola);
+            Genero = new Genero(videojuego.IdTipoGenero);
         }
     }
 }
