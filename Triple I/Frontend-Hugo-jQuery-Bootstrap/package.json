@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "datatables.net": "^1.12.1",
-    "datatables.net-dt": "^1.12.1",
+    "datatables.net-bs5": "^1.12.1",
+    "datatables.net-buttons-bs5": "^2.2.3",
     "jquery": "^3.6.1"
   },
   "description": "Frontend Examen .NET - Hugo, jQuery y Bootstrap",
