@@ -6,5 +6,41 @@ layout: "single"
 ---
 
 <div id="app">
-  <table id="tb-vg"></table>
+  <table id="tb-vg" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Año</th>
+        <th>titulo</th>
+        <th>Consola</th>
+        <th>Genero</th>
+        <th>Calificacion</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+  </table>
 </div>
+
+<script type="text/javascript">
+  $(function () {
+    $("#tb-vg").DataTable({
+      data: "",
+      ajax: {
+        dataType: "json",
+        type: "GET",
+        url: "{{< videojuegoapi >}}",
+        dataSrc: "",
+      },
+      language: {
+        url: "/locale/es-MX.json",
+      },
+      columns: [
+        { data: "anio" },
+        { data: "titulo" },
+        { data: "nombreConsola" },
+        { data: "nombreGenero" },
+        { data: "calificacion" },
+        { data: "cantidad" },
+      ],
+    });
+  });
+</script>
