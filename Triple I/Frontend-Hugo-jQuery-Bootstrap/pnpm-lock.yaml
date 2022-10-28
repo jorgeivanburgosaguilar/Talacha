@@ -1,0 +1,30 @@
+lockfileVersion: 5.4
+
+specifiers:
+  datatables.net: ^1.12.1
+  datatables.net-dt: ^1.12.1
+  jquery: ^3.6.1
+
+dependencies:
+  datatables.net: 1.12.1
+  datatables.net-dt: 1.12.1
+  jquery: 3.6.1
+
+packages:
+
+  /datatables.net-dt/1.12.1:
+    resolution: {integrity: sha512-HYsHbSYqOqlgsgjKMH/kkCB5455t51GmmtXRxgnDMRbjPLEIKo5CZmAlUe5mdD/RVPRtAUaj5K3SDlkEZ1bUmw==}
+    dependencies:
+      datatables.net: 1.12.1
+      jquery: 3.6.1
+    dev: false
+
+  /datatables.net/1.12.1:
+    resolution: {integrity: sha512-e6XAMUoV41JdQPS/r9YRfRcmTPcCVvyZbWI+xog1Zg+kjVliMQbEkvWK5XFItmi64Cvwg+IqsZbTUJ1KSY3umA==}
+    dependencies:
+      jquery: 3.6.1
+    dev: false
+
+  /jquery/3.6.1:
+    resolution: {integrity: sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw==}
+    dev: false

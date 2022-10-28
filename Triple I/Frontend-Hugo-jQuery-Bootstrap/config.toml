@@ -1,0 +1,5 @@
+baseURL = "http://localhost:1313/"
+defaultContentLanguage = "es"
+languageCode = "es"
+title = 'Examen .NET - Tienda de Videojuegos'
+disableKinds = ["RSS", "taxonomy", "term"]

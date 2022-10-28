@@ -1,0 +1,26 @@
+{
+  "author": "Jorge Ivan Burgos Aguilar <15068542+jorgeivanburgosaguilar@users.noreply.github.com>",
+  "comments": {
+    "dependencies": {
+      "datatables.net": "project",
+      "datatables.net-dt": "project",
+      "jquery": "project"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "datatables.net": "^1.12.1",
+    "datatables.net-dt": "^1.12.1",
+    "jquery": "^3.6.1"
+  },
+  "description": "Frontend Examen .NET - Hugo, jQuery y Bootstrap",
+  "license": "Unlicense",
+  "name": "frontend-hugo-jquery-bootstrap",
+  "private": true,
+  "scripts": {
+    "build": "hugo",
+    "dev": "hugo server"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
