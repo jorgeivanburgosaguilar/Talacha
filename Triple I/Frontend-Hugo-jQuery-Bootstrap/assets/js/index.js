@@ -1,4 +1,6 @@
-var $ = require("jquery");
-require("datatables.net")(window, $);
-require("datatables.net-bs5")(window, $);
-require("datatables.net-buttons-bs5")(window, $);
+import $ from "jquery";
+import "datatables.net";
+import "datatables.net-bs5";
+import "datatables.net-buttons-bs5";
+
+window.DataTable = setup(window, $);

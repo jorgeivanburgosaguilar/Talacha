@@ -2,19 +2,25 @@
   "author": "Jorge Ivan Burgos Aguilar <15068542+jorgeivanburgosaguilar@users.noreply.github.com>",
   "comments": {
     "dependencies": {
+      "@popperjs/core": "project",
+      "bootstrap": "project",
       "datatables.net": "project",
-      "datatables.net-dt": "project",
+      "datatables.net-bs5": "project",
+      "datatables.net-buttons-bs5": "project",
       "jquery": "project"
     },
     "devDependencies": {}
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.2",
     "datatables.net": "^1.12.1",
     "datatables.net-bs5": "^1.12.1",
     "datatables.net-buttons-bs5": "^2.2.3",
     "jquery": "^3.6.1"
   },
   "description": "Frontend Examen .NET - Hugo, jQuery y Bootstrap",
+  "devDependencies": {},
   "license": "Unlicense",
   "name": "frontend-hugo-jquery-bootstrap",
   "private": true,
@@ -22,6 +28,5 @@
     "build": "hugo",
     "dev": "hugo server"
   },
-  "type": "module",
   "version": "1.0.0"
 }
