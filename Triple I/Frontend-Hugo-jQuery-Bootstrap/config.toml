@@ -1,8 +1,41 @@
 baseURL = "http://localhost:1313/"
 defaultContentLanguage = "es"
 languageCode = "es"
-title = 'Examen .NET - Tienda de Videojuegos'
+title = "Examen .NET - Tienda de Videojuegos"
 disableKinds = ["RSS", "taxonomy", "term"]
 
 [params]
   videoJuegoApi = "http://localhost:5030/api/Videojuegos"
+
+[module]
+  [[module.mounts]]
+  source = "static/locale/es-MX.json"
+  target = "static/locale/es-MX.json"
+
+  [[module.mounts]]
+  source = "node_modules/jquery/dist/jquery.min.js"
+  target = "assets/js/vendor/jquery.min.js"
+
+  [[module.mounts]]
+  source = "node_modules/jquery/dist/jquery.min.map"
+  target = "static/js/jquery.min.map"
+
+  [[module.mounts]]
+  source = "node_modules/bootstrap/dist/js/bootstrap.min.css"
+  target = "assets/css/vendor/bootstrap.min.css"
+
+  [[module.mounts]]
+  source = "node_modules/bootstrap/dist/css/bootstrap.min.css"
+  target = "assets/css/vendor/bootstrap.min.css"
+
+  [[module.mounts]]
+  source = "node_modules/bootstrap/dist/css/bootstrap.min.css.map"
+  target = "static/css/bootstrap.min.css.map"
+
+  [[module.mounts]]
+  source = "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+  target = "assets/css/vendor/dataTables.bootstrap5.min.css"
+
+  [[module.mounts]]
+  source = "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css"
+  target = "assets/css/vendor/dataTables.bootstrap5.min.css"

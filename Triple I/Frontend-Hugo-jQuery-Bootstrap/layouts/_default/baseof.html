@@ -6,29 +6,26 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
 
-    {{ $params := (dict "is_production" hugo.IsProduction ) }} {{ $sourceMap :=
-    cond hugo.IsProduction "" "inline" }} {{ $opts := dict "sourceMap"
+    {{ $cssBundle := resources.Match "css/vendor/*.min.css" | resources.Concat
+    "css/bundle.css" }}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ $cssBundle.RelPermalink }}" />
+
+    {{ $jsBundle := resources.Match "js/vendor/*.min.js" | resources.Concat
+    "js/bundle.js" }}
+
+    {{/*  {{ $params := (dict "is_production" hugo.IsProduction) }} {{ $sourceMap :=
+    cond hugo.IsProduction "external" "inline" }} {{ $opts := dict "sourceMap"
     $sourceMap "minify" hugo.IsProduction "target" "es2018" "targetPath"
-    "js/bundle.js" "params" $params }} {{ $bundle := resources.Get "js/index.js"
-    | js.Build $opts }}
+    "js/bundle.js" "params" $params }} {{ $jsBundle := resources.Get
+    "js/index.js" | js.Build $opts }}  */}}
     <script
       type="text/javascript"
       charset="utf8"
-      src="{{ $bundle.RelPermalink }}"></script>
+      src="{{ $jsBundle.RelPermalink }}"></script>
   </head>
   <body>
     {{ block "main" . }}
