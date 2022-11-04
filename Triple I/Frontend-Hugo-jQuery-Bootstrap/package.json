@@ -6,6 +6,7 @@
       "bootstrap": "project",
       "datatables.net": "project",
       "datatables.net-bs5": "project",
+      "datatables.net-buttons": "project",
       "datatables.net-buttons-bs5": "project",
       "jquery": "project"
     },
@@ -16,6 +17,7 @@
     "bootstrap": "^5.2.2",
     "datatables.net": "^1.12.1",
     "datatables.net-bs5": "^1.12.1",
+    "datatables.net-buttons": "^2.2.3",
     "datatables.net-buttons-bs5": "^2.2.3",
     "jquery": "^3.6.1"
   },

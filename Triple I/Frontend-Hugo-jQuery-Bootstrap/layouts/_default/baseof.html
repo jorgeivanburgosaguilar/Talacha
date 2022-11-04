@@ -6,22 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-
-    {{ $cssBundle := resources.Match "css/vendor/*.min.css" | resources.Concat
-    "css/bundle.css" }}
+    {{- $cssBundle := resources.Match "css/*.min.css" | resources.Concat
+    "css/bundle.css" -}}
     <link
       rel="stylesheet"
       type="text/css"
       href="{{ $cssBundle.RelPermalink }}" />
-
-    {{ $jsBundle := resources.Match "js/vendor/*.min.js" | resources.Concat
-    "js/bundle.js" }}
-
-    {{/*  {{ $params := (dict "is_production" hugo.IsProduction) }} {{ $sourceMap :=
-    cond hugo.IsProduction "external" "inline" }} {{ $opts := dict "sourceMap"
-    $sourceMap "minify" hugo.IsProduction "target" "es2018" "targetPath"
-    "js/bundle.js" "params" $params }} {{ $jsBundle := resources.Get
-    "js/index.js" | js.Build $opts }}  */}}
+    {{- $jsBundle := resources.Match "js/*/*.min.js" | resources.Concat
+    "js/bundle.js" -}}
     <script
       type="text/javascript"
       charset="utf8"

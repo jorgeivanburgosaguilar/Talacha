@@ -5,37 +5,52 @@ title = "Examen .NET - Tienda de Videojuegos"
 disableKinds = ["RSS", "taxonomy", "term"]
 
 [params]
-  videoJuegoApi = "http://localhost:5030/api/Videojuegos"
+videoJuegoApi = "http://localhost:5030/api/Videojuegos"
 
 [module]
-  [[module.mounts]]
-  source = "static/locale/es-MX.json"
-  target = "static/locale/es-MX.json"
+[[module.mounts]]
+source = "node_modules/jquery/dist/"
+target = "assets/js/00/"
+includeFiles = ["jquery.js", "jquery.min.js", "jquery.min.map"]
 
-  [[module.mounts]]
-  source = "node_modules/jquery/dist/jquery.min.js"
-  target = "assets/js/vendor/jquery.min.js"
+[[module.mounts]]
+source = "node_modules/bootstrap/dist/js/"
+target = "assets/js/01/"
+includeFiles = [
+  "bootstrap.bundle.js",
+  "bootstrap.bundle.js.map",
+  "bootstrap.bundle.min.js",
+  "bootstrap.bundle.min.js.map",
+]
 
-  [[module.mounts]]
-  source = "node_modules/jquery/dist/jquery.min.map"
-  target = "static/js/jquery.min.map"
+[[module.mounts]]
+source = "node_modules/datatables.net/js/"
+target = "assets/js/02/"
+includeFiles = ["jquery.dataTables.js", "jquery.dataTables.min.js"]
 
-  [[module.mounts]]
-  source = "node_modules/bootstrap/dist/js/bootstrap.min.css"
-  target = "assets/css/vendor/bootstrap.min.css"
+[[module.mounts]]
+source = "node_modules/datatables.net-bs5/js/"
+target = "assets/js/03/"
+includeFiles = ["dataTables.bootstrap5.js", "dataTables.bootstrap5.min.js"]
 
-  [[module.mounts]]
-  source = "node_modules/bootstrap/dist/css/bootstrap.min.css"
-  target = "assets/css/vendor/bootstrap.min.css"
+[[module.mounts]]
+source = "node_modules/datatables.net-buttons/js/"
+target = "assets/js/04/"
+includeFiles = ["dataTables.buttons.js", "dataTables.buttons.min.js"]
 
-  [[module.mounts]]
-  source = "node_modules/bootstrap/dist/css/bootstrap.min.css.map"
-  target = "static/css/bootstrap.min.css.map"
+[[module.mounts]]
+source = "node_modules/datatables.net-buttons-bs5/js/"
+target = "assets/js/05/"
+includeFiles = ["buttons.bootstrap5.js", "buttons.bootstrap5.min.js"]
 
-  [[module.mounts]]
-  source = "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
-  target = "assets/css/vendor/dataTables.bootstrap5.min.css"
+[[module.mounts]]
+source = "node_modules/bootstrap/dist/css/bootstrap.min.css"
+target = "assets/css/00.bootstrap.min.css"
 
-  [[module.mounts]]
-  source = "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css"
-  target = "assets/css/vendor/dataTables.bootstrap5.min.css"
+[[module.mounts]]
+source = "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+target = "assets/css/01.dataTables.bootstrap5.min.css"
+
+[[module.mounts]]
+source = "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css"
+target = "assets/css/02.buttons.bootstrap5.min.css"
