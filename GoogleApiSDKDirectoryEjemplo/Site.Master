@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GoogleApiSDKDirectoryEjemplo.Site" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server" ID="Head1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google API SDK Directory Ejemplo con ASP.NET Webforms y DevExpress</title>
+</head>
+<body>
+    <form runat="server" id="Form1">
+        <asp:ScriptManager runat="server" ID="ScriptManager1" EnablePageMethods="True" ScriptMode="Release" EnableScriptGlobalization="True">
+        </asp:ScriptManager>
+
+        <asp:ContentPlaceHolder runat="server" ID="CphContenidos">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
