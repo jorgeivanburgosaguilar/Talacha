@@ -1,0 +1,6 @@
+                    <{{ nombre }}>
+                        <numero_registro>{{ numero }}</numero_registro>
+                        <valor>{{ valor }}</valor>
+                        <id_campo_tabla>{{ id }}</id_campo_tabla>
+                        <etiqueta>{{ etiqueta }}</etiqueta>
+                    </{{ nombre }}>
