@@ -9,35 +9,35 @@ public class Solution
     {
         var suma = 0;
         var ultimoIndice = s.Length - 1;
-        
-        for(var i = 0; i < s.Length; i++)
+
+        for (var i = 0; i < s.Length; i++)
         {
             var esUltimoIndice = ultimoIndice == i;
-            
+
             if (s[i] == 'M')
             {
                 suma += 1000;
                 continue;
             }
-            
+
             if (s[i] == 'D')
             {
                 suma += 500;
                 continue;
             }
-            
+
             if (s[i] == 'L')
             {
                 suma += 50;
                 continue;
             }
-            
+
             if (s[i] == 'V')
             {
                 suma += 5;
                 continue;
             }
-            
+
             if (s[i] == 'C')
             {
                 if (esUltimoIndice)
@@ -45,7 +45,7 @@ public class Solution
                     suma += 100;
                     break;
                 }
-                
+
                 if (s[i + 1] == 'D')
                 {
                     suma += 400;
@@ -64,7 +64,7 @@ public class Solution
                     continue;
                 }
             }
-            
+
             if (s[i] == 'X')
             {
                 if (esUltimoIndice)
@@ -72,7 +72,7 @@ public class Solution
                     suma += 10;
                     break;
                 }
-                
+
                 if (s[i + 1] == 'L')
                 {
                     suma += 40;
@@ -91,7 +91,7 @@ public class Solution
                     continue;
                 }
             }
-            
+
             if (s[i] == 'I')
             {
                 if (esUltimoIndice)
@@ -99,7 +99,7 @@ public class Solution
                     suma += 1;
                     break;
                 }
-                
+
                 if (s[i + 1] == 'V')
                 {
                     suma += 4;
@@ -119,7 +119,9 @@ public class Solution
                 }
             }
         }
-        
-        return suma;        
+
+        return suma;
     }
 }
+
+Console.WriteLine(new Solution().RomanToInt("MCMXCIV"));
