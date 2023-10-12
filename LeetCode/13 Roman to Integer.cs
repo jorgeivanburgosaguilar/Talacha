@@ -124,4 +124,6 @@ public class Solution
     }
 }
 
-Console.WriteLine(new Solution().RomanToInt("MCMXCIV"));
+Console.WriteLine(new Solution().RomanToInt("III")); // 3
+Console.WriteLine(new Solution().RomanToInt("LVIII")); // 58
+Console.WriteLine(new Solution().RomanToInt("MCMXCIV")); // 1994
