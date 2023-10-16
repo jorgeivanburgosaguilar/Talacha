@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E368D61-3B43-4615-81BF-20E8DB62E5A0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SIPOTCC</RootNamespace>
+    <AssemblyName>SIPOTCC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\WebApp\LibreriasComunes\DevExpressV22.1.3\DevExpress.Data.v22.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\WebApp\LibreriasComunes\DevExpressV22.1.3\DevExpress.Docs.v22.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\WebApp\LibreriasComunes\DevExpressV22.1.3\DevExpress.Office.v22.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\WebApp\LibreriasComunes\DevExpressV22.1.3\DevExpress.Printing.v22.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\WebApp\LibreriasComunes\DevExpressV22.1.3\DevExpress.Spreadsheet.v22.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotLiquid, Version=1.7.0.0, Culture=neutral, PublicKeyToken=82e46016ecf9f07c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WebApp\LibreriasComunes\DotLiquidV1.7.0\DotLiquid.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WebApp\LibreriasComunes\Json.NETV6.0.3.17227\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SIPOT\Campos\Anio.cs" />
+    <Compile Include="SIPOT\Campos\Archivo.cs" />
+    <Compile Include="SIPOT\Campos\Atributos\ConfiguracionesXML.cs" />
+    <Compile Include="SIPOT\Campos\Campo.cs" />
+    <Compile Include="SIPOT\Campos\Catalogo.cs" />
+    <Compile Include="SIPOT\Campos\Fecha.cs" />
+    <Compile Include="SIPOT\Campos\FechaActualizacion.cs" />
+    <Compile Include="SIPOT\Campos\Hora.cs" />
+    <Compile Include="SIPOT\Campos\IdentificadorTabla.cs" />
+    <Compile Include="SIPOT\Campos\Moneda.cs" />
+    <Compile Include="SIPOT\Campos\Nota.cs" />
+    <Compile Include="SIPOT\Campos\Numero.cs" />
+    <Compile Include="SIPOT\Campos\PaginaWeb.cs" />
+    <Compile Include="SIPOT\Campos\Separador.cs" />
+    <Compile Include="SIPOT\Campos\Tabla.cs" />
+    <Compile Include="SIPOT\Campos\TextoCorto.cs" />
+    <Compile Include="SIPOT\Campos\TextoLargo.cs" />
+    <Compile Include="SIPOT\Enumeradores\Extensiones.cs" />
+    <Compile Include="SIPOT\Enumeradores\TipoCampo.cs" />
+    <Compile Include="SIPOT\Enumeradores\TipoError.cs" />
+    <Compile Include="SIPOT\Error.cs" />
+    <Compile Include="SIPOT\Formato.cs" />
+    <Compile Include="SIPOT\Genericos.cs" />
+    <Compile Include="SIPOT\Posicion.cs" />
+    <Compile Include="SIPOT\Registro.cs" />
+    <Compile Include="SIPOT\RegistroTabla.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="Formato_Pruebas.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SIPOT\Plantillas\Campo.xml" />
+    <Content Include="SIPOT\Plantillas\CampoTabla.xml" />
+    <Content Include="SIPOT\Plantillas\Formato.xml" />
+    <Content Include="SIPOT\Plantillas\Registro.xml" />
+    <Content Include="SIPOT\Plantillas\RegistroCampoTabla.xml" />
+    <Content Include="SIPOT\Plantillas\RegistroCatalogo.xml" />
+    <Content Include="SIPOT\Plantillas\RegistroCatalogoTabla.xml" />
+    <Content Include="SIPOT\Plantillas\RegistroTabla.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
