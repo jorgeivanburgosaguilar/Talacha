@@ -1,5 +1,5 @@
 /*
-2625. Flatten Deeply Nested Array
+2625 Flatten Deeply Nested Array
 Runtime: 140 ms, faster than 39.67% of JavaScript online submissions.
 Memory Usage: 99.09 MB, less than 40.29% of JavaScript online submissions.
 */
