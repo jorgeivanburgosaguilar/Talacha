@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "youtubeapiv3channeltocsv",
+  "version": "1.0.0",
+  "description": "Lista todos los videos de un canal de YouTube para convertirlos a CSV usando la YouTube API v3",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jorge Burgos",
+  "license": "Unlicense",
+  "devDependencies": {
+    "@eslint/create-config": "^0.4.6",
+    "eslint": "^8.54.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "googleapis": "^129.0.0"
+  }
+}
