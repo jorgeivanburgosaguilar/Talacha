@@ -61,7 +61,7 @@ async function main() {
         for (const playlistItem of playlistResponse.items) {
           const publishedAt = playlistItem.snippet.publishedAt;
           const title = playlistItem.snippet.title;
-          const description = playlistItem.snippet.description;
+          const description = playlistItem.snippet.description.replace(/\n/g, ". ");
           const videoId = YOUTUBE_URL + playlistItem.snippet.resourceId.videoId;
 
           records.push({ publishedAt, title, description, videoId });
