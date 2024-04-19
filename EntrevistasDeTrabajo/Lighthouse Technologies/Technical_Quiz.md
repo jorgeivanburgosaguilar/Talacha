@@ -3,13 +3,15 @@
 Welcome to your Python Quick assessment. You must answer following 10 questions in under 10 minutes. Good luck!
 
 ## 1. What will be the output of the following Python code?
+
 ```python
 a={30,40,50}
 a.update([10,20,30])
 print (a)
 ```
 
-### Options:
+Options:
+
 - {10, 20, 30, 40, 50}
 - [10,20,30,30,40,50]
 - Error, list can't be added to set
@@ -17,7 +19,6 @@ print (a)
 - Error, duplicate item present in list
 
 **Answer:** **_None of the these_**
-
 
 ## 2. In a SELECT query which clause is executed first?
 
@@ -28,27 +29,27 @@ print (a)
 
 **Answer:** **_WHERE_**
 
-
 ## 3. What will be the output of the following Python code?
+
 ```python
 import math
 [str(round(math.pi)) for i in range (1, 3)]
 ```
 
-### Options:
+Options:
+
 - ['3.1', '3.14','3.142']
 - [3, 3, 3]
 - ['3', '3']
 - None of these
 - ['3', '3', '3']
 
-
 **Answer:** **_['3', '3']_**
-
 
 ## 4. Let X and Y be objects of class Class1. Which functions are called when print(A + B) is executed?
 
-### Options
+Options
+
 - _sum_(), _str_()
 - _add_(), _str_()
 - None of the other answers is correct
@@ -56,8 +57,8 @@ import math
 
 **Answer:** **__add_(), _str_()_**
 
-
 ## 5. What will be the output of the following Python code?
+
 ```python
 def add (o,k):
     o.t=o.t+1
@@ -73,35 +74,41 @@ def main():
 ```
 
 ### Options
+
 - ```python
     c.t = 25
     k = 25
   ```
+
 - ```python
     c.t = 25
     k = 0
   ```
+
 - ```python
     c.t = 0
     k = 0
   ```
+
 - Exception is thrown
 
 **Answer:**
+
 ```python
     c.t = 0
     k = 0
 ```
 
-
 ## 6. Given the following script, what will be the value of my_string?
+
 ```python
 my_sentence = "I love to learn new things"
 splited = my_sentence.split()
 my_string = splited[-1]
 ```
 
-### Options
+Options
+
 - "things"
 - "love"
 - None of these
@@ -110,15 +117,16 @@ my_string = splited[-1]
 
 **Answer:** **_"things"_**
 
-
 ## 7. What will be the output of the following code?
+
 ```python
 name = "James"
 for x in name:
   print (x)
 ```
 
-### Options
+Options
+
 - It will raise ValueError
 - None of these
 - It will print numbers 1 through 5
@@ -127,8 +135,8 @@ for x in name:
 
 **Answer:** **_It will print each character once_**
 
-
 ## 8. What is the output of the following code?
+
 ```python
 for count in range(5):
   str1 = 'a' * count
@@ -136,8 +144,10 @@ for count in range(5):
   print (str1 is str2)
 ```
 
-### Options
+Options
+
 - None of these
+
 - ```python
     True
     True
@@ -145,6 +155,7 @@ for count in range(5):
     True
     True
   ```
+
 - ```python
     False
     False
@@ -152,6 +163,7 @@ for count in range(5):
     False
     False
   ```
+
 - ```python
     True
     True
@@ -159,9 +171,11 @@ for count in range(5):
     False
     False
   ```
+
 - Exception will be raised
 
 **Answer:**
+
 ```python
 True
 True
@@ -170,15 +184,16 @@ False
 False
 ```
 
-
 ## 9. What will be the output of the following code?
+
 ```python
 m = [1,2,3,4]
 m.append([4,6,7,8])
 print (len(m))
 ```
 
-### Options
+Options
+
 - Exception will be raised
 - 5
 - 8
@@ -186,10 +201,10 @@ print (len(m))
 
 **Answer:** **_5_**
 
-
 ## 10. Whats "requests" library is used for?
 
-### Options
+Options
+
 - Making web requests
 - Interacting with the file system
 - Making database requests
